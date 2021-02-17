@@ -1,116 +1,181 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head style="display:block;">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MPG8B83NJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MPG8B83NJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7MPG8B83NJ');
-  </script>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Elton Gutoch is a Product Designer and former content strategist based in Stockholm, Sweden. Hire him!">
-  <meta name="keywords" content="Product Designer in Stockholm, Associate Product Designer in Stockholm, Junior Product Designer in Stockholm, Product Design Portfolio">
-  <title>Elton Gutoch | Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet"> 
-
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
+        gtag('config', 'G-7MPG8B83NJ');
+    </script>
   
-  <style type="text/css">
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-size: 100%;
-      font-weight: inherit;
-    }
-
-    body {
-      background: #1f1f1f;
-      color: #BFBFBF;
-      width: 100%;
-    }
-
-    /* PAGE */
-    .text {
-      font-family: 'Libre Baskerville', serif;
-      display: block;
-      font-size: 5.5vw;
-      line-height: 6.2vw;
-      font-variant-ligatures: normal;
-      cursor: default;
-    }
-
-    h1 {
-      font: inherit;
-      line-height: inherit;
-      letter-spacing: inherit;
-    }
-
-    .text p, h1 {
-      opacity: 0;
-      animation: fadein .2s forwards ease-out;
-      padding: 2.2vw 10vw 3.3vw 3vw;
-    }
-
-    .text a {
-      text-decoration: none;
-      color: #ffffff;
-      cursor: pointer;
-    }
-
-    .underline--magical {
-    background-image: linear-gradient(120deg, #7A41F6 20%, #5100ff 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.3em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-    }
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Elton Gutoch is a Product Designer and former content strategist based in Stockholm, Sweden. Hire him!">
+    <meta name="keywords" content="Product Designer in Stockholm, Associate Product Designer in Stockholm, Junior Product Designer in Stockholm, Product Design Portfolio">
     
-    .underline--magical:hover {
-      background-size: 100% 88%;
-    }
+    <title>Elton Gutoch | Portfolio</title>
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
 
-    .highlight {
-      color: #ffffff;
-    }   
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    @keyframes fadein {
-      0% {
-        opacity: 0;
-        margin-top: 1.5vw;
-      }
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 100%;
+            font-weight: inherit;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;            
+            -ms-user-select: none;
+            user-select: none;
 
-      100% {
-        opacity: 1;
-        margin-top: 0;
-      }
-    }
-  </style>
+        }
+    
+        body {
+            margin: 0;
+            background-color: #000;
+            color:  #fff;
+            width: 100%;
+
+        }
+
+        canvas {
+            display: block;
+            position: fixed;
+            outline:0;
+            animation: fadein 1s forwards ease-in;
+
+        }
+
+        .canvas2 {
+            display: block;
+            position: fixed;
+            outline:0;
+            background-color: rgba(0, 0, 0, 0.6);
+            animation: fadein 1s forwards ease-in;
+        }
+
+        .text {
+            position: absolute;
+            height: 100%;
+            font-family: 'Nunito', sans-serif;
+            display: block;
+            font-size: 5.5vw;
+            line-height: 6.2vw;
+            font-variant-ligatures: normal;
+            cursor: default;
+            animation: fadein 1s forwards ease-in;
+
+        }
+
+         h1 {
+            font: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+
+        }
+
+        .text p, h1 {
+            opacity: 0;
+            animation: fadein .2s forwards ease-out;
+            padding: 2.2vw 10vw 3.3vw 3vw;
+
+        }
+
+        .text a {
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+
+        }
+
+        .underline--magical {
+            background-image: linear-gradient(120deg, #7A41F6 20%, #5100ff 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.3em;
+            background-position: 0 75%;
+            transition: background-size 0.25s ease-in-out;
+        
+        }
+            
+        .underline--magical:hover {
+            background-size: 100% 75%;
+        
+        }
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+                margin-top: 1.5vw;
+            }
+
+            100% {
+                opacity: 1;
+                margin-top: 0;
+            }
+        }
+
+    </style>
 
 </head>
 
-<body style="display:block;">
+<body>
+    <canvas id="glcanvas" width="100vw" height="100vh" tabindex="1"></canvas>
+    <canvas class="canvas2" id="canvas2" width="100vw" height="100vh" tabindex="2"></canvas>
 
-  <div class="text">
-    <h1 style="animation-delay: .1s;"></h1>
-    <p style="animation-delay: 0.2s;"><i>Olá!</i> My name is <span class="highlight">Elton</span>.</p>
-    <p style="animation-delay: 0.3s;">I'm a soon-to-be <span class="highlight">Product Designer</span> and former content strategist based in Stockholm, Sweden.</p>
-    <p style="animation-delay: 0.4s;">I'm currently part of the full-time <span class="highlight">Digital Media Creative</span> program at <span class="underline--magical"><a target="_blank" rel="noopener" href="https://www.hyperisland.com/programs-and-courses/digital-media-creative">Hyper Island</a></span>, where I'm learning and experimenting with a bunch of new stuff.</p>
-    <p style="animation-delay: 0.5s;"><span class="highlight">Come back later</span> to see all the cool projects I'm getting ready to showcase.</p>
-    <p style="animation-delay: 0.6s;">Until then, check out my <span class="underline--magical"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eltongutoch/">LinkedIn</a></span> page, follow me on <span class="underline--magical"><a target="_blank" rel="noopener" href="https://twitter.com/anotherelton">Twitter</a></span>, or hit me up at <span class="underline--magical"><a target="_blank" rel="noopener" href="mailto:hello@elton.work">hello@elton.work</a></span>.</p>
-    <p></p>
-  </div>
+    <libs/>
+    <script type="text/javascript" src="js/patch.js" async></script>
+    <corelibs/>
+
+    <div class="text">
+
+        <h1 style="animation-delay: 1s;"> </h1>
+        <p style="animation-delay: 1.2s;">Olá! My name is Elton.</p>
+        <p style="animation-delay: 1.4s;">I'm a soon-to-be Product Designer and former content strategist based in Stockholm, Sweden.</p>
+        <p style="animation-delay: 1.6s;">I'm currently part of the full-time Digital Media Creative program at <span class="underline--magical"><a target="_blank" rel="noopener" href="https://www.hyperisland.com/programs-and-courses/digital-media-creative">Hyper Island</a></span>, where I'm learning and experimenting with a bunch of new stuff.</p>
+        <p style="animation-delay: 1.8s;">Come back later to see all the cool projects I'm getting ready to showcase.</p>
+        <p style="animation-delay: 2.0s;">Until then, check out my <span class="underline--magical"><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/eltongutoch/">LinkedIn</a></span> page, follow me on <span class="underline--magical"><a target="_blank" rel="noopener" href="https://twitter.com/anotherelton">Twitter</a></span>, or hit me up at <span class="underline--magical"><a target="_blank" rel="noopener" href="mailto:hello@elton.work">hello@elton.work</a></span>.</p>
+        <p></p>
+
+    </div>
+
+    <script>
+        document.getElementById('glcanvas').addEventListener('touchmove', (e)=>{ e.preventDefault(); }, false);
+
+
+        function patchInitialized(patch) {
+        }
+
+        function patchFinishedLoading(patch) {
+        }
+
+        document.addEventListener('CABLES.jsLoaded', function (event) {
+            CABLES.patch = new CABLES.Patch({
+                patch: CABLES.exportedPatch,
+                prefixAssetPath: '',
+                glCanvasId: 'glcanvas',
+                glCanvasResizeToWindow: true,
+                onPatchLoaded: patchInitialized,
+                onFinishedLoading: patchFinishedLoading,
+            });
+        });
+
+        // Darken bg
+        var canvasbg = document.getElementById("canvas2");
+        canvasbg.width  = window.innerWidth;
+        canvasbg.height = window.innerHeight;
+
+    </script>
 
 </body>
 
